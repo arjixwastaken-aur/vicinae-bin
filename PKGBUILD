@@ -3,7 +3,7 @@
 
 pkgname=vicinae-bin
 pkgver=0.19.5
-pkgrel=2
+pkgrel=3
 pkgdesc="Raycast like FOSS app on Linux"
 arch=('x86_64')
 url="https://github.com/vicinaehq/vicinae"
@@ -27,6 +27,7 @@ prepare() {
 }
 
 package() {
+  exit 1
   for item in ./vicinae/*; do
     cp -a "$item" "$pkgdir/"
   done
