@@ -6,12 +6,23 @@
 # shellcheck disable=SC2128
 pkgname=vicinae-bin
 pkgver=0.19.9
-pkgrel=1
+pkgrel=2
 pkgdesc="Raycast like FOSS app on Linux"
 arch=('x86_64')
 url="https://github.com/vicinaehq/vicinae"
 license=('GPL3')
-depends=(nodejs qt6-base qt6-svg layer-shell-qt libqalculate qtkeychain-qt6 libxml2 minizip)
+depends=(
+  nodejs
+  qt6-base
+  qt6-declarative
+  qt6-svg
+  layer-shell-qt
+  libqalculate
+  qtkeychain-qt6
+  libxml2
+  minizip
+  syntax-highlighting
+)
 provides=("vicinae")
 conflicts=("vicinae")
 
